@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-const Lotties = () => {
+const Lottie = () => {
   return (
     <Wrapper>
       <div className="send-wrapper">
@@ -120,4 +120,4 @@ const Wrapper = styled.section`
   }
 `;
 
-export default Lotties;
+export default Lottie;

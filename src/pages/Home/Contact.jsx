@@ -1,27 +1,7 @@
-// import React from "react";
-// import { FaWhatsapp } from "react-icons/fa";
-// import { MdEmail } from "react-icons/md";
-// import { Link } from "react-router-dom";
-
-// const Contact = () => {
-//   return (
-//     <section className="contact-layout1 pt-0 mt--100">
-//       <div className="container">
-//         <div className="row">
-//           <div className="col-lg-6"></div>
-//           <div className="col-lg-6"></div>
-//         </div>
-//       </div>
-//     </section>
-//   );
-// };
-
-// export default Contact;
-
 import React from "react";
 import { FaEnvelope, FaPaperPlane, FaUser, FaWhatsapp } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
-import Lotties from "../../components/Lottie/Lotties";
+import Lotties from "../../components/Lottie/Lottie.jsx";
 
 const Contact = () => {
   return (
@@ -137,3 +117,23 @@ const Contact = () => {
 };
 
 export default Contact;
+
+// import React from "react";
+// import { FaWhatsapp } from "react-icons/fa";
+// import { MdEmail } from "react-icons/md";
+// import { Link } from "react-router-dom";
+
+// const Contact = () => {
+//   return (
+//     <section className="contact-layout1 pt-0 mt--100">
+//       <div className="container">
+//         <div className="row">
+//           <div className="col-lg-6"></div>
+//           <div className="col-lg-6"></div>
+//         </div>
+//       </div>
+//     </section>
+//   );
+// };
+
+// export default Contact;
