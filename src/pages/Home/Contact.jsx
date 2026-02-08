@@ -2,6 +2,7 @@ import React from "react";
 import { FaEnvelope, FaPaperPlane, FaUser, FaWhatsapp } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import Lotties from "../../components/Lottie/Lottie.jsx";
+import { Link } from "react-router-dom";
 
 const Contact = () => {
   return (
@@ -17,26 +18,26 @@ const Contact = () => {
 
             <div className="d-flex flex-column gap-3">
               {/* WhatsApp */}
-              <a
-                href="https://wa.me/8801938627947"
+              <Link
+                to="https://wa.me/8801938627947"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="d-flex align-items-center gap-3 p-3 rounded border bg-dark bg-opacity-75 text-decoration-none text-white contact-card"
               >
                 <FaWhatsapp size={22} className="text-success" />
                 <span>+880 1938-627947</span>
-              </a>
+              </Link>
 
               {/* Email */}
-              <a
-                href="mailto:elorayasmin20@gmail.com"
+              <Link
+                to="mailto:elorayasmin20@gmail.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="d-flex align-items-center gap-3 p-3 rounded border bg-dark bg-opacity-75 text-decoration-none text-white contact-card"
               >
                 <MdEmail size={22} className="text-primary" />
                 <span>elorayasmin20@gmail.com</span>
-              </a>
+              </Link>
             </div>
 
             <Lotties />
@@ -44,25 +45,20 @@ const Contact = () => {
 
           {/* RIGHT IMAGE / ANIMATION */}
           <div className="col-lg-5 text-center">
-            {/* You can keep your SVG or Lottie here */}
-            {/* <img
-              src="/assets/contact-illustration.svg"
-              alt="Contact"
-              className="img-fluid"
-            /> */}
             <form className="bg-dark bg-opacity-75 p-4 p-md-5 rounded-4 border border-secondary shadow">
               <h3 className="text-white fw-semibold mb-4">Send a Message</h3>
 
               {/* Name */}
               <div className="mb-3">
-                <label className="form-label text-secondary">Your Name</label>
+                <label className="form-label text-secondary text-start">
+                  Your Name
+                </label>
                 <div className="position-relative">
                   <FaUser className="position-absolute top-50 start-0 translate-middle-y ms-3 text-secondary" />
                   <input
                     type="text"
                     name="name"
                     required
-                    placeholder="e.g. Elora Yasmin"
                     className="form-control bg-black text-white ps-5 border-secondary"
                   />
                 </div>
@@ -70,14 +66,15 @@ const Contact = () => {
 
               {/* Email */}
               <div className="mb-3">
-                <label className="form-label text-secondary">Your Email</label>
+                <label className="form-label text-secondary text-start">
+                  Your Email
+                </label>
                 <div className="position-relative">
                   <FaEnvelope className="position-absolute top-50 start-0 translate-middle-y ms-3 text-secondary" />
                   <input
                     type="email"
                     name="email"
                     required
-                    placeholder="e.g. elorayasmin20@gmail.com"
                     className="form-control bg-black text-white ps-5 border-secondary"
                   />
                 </div>
@@ -85,7 +82,7 @@ const Contact = () => {
 
               {/* Message */}
               <div className="mb-4">
-                <label className="form-label text-secondary">
+                <label className="form-label text-secondary text-start">
                   Your Message
                 </label>
                 <textarea
@@ -117,23 +114,3 @@ const Contact = () => {
 };
 
 export default Contact;
-
-// import React from "react";
-// import { FaWhatsapp } from "react-icons/fa";
-// import { MdEmail } from "react-icons/md";
-// import { Link } from "react-router-dom";
-
-// const Contact = () => {
-//   return (
-//     <section className="contact-layout1 pt-0 mt--100">
-//       <div className="container">
-//         <div className="row">
-//           <div className="col-lg-6"></div>
-//           <div className="col-lg-6"></div>
-//         </div>
-//       </div>
-//     </section>
-//   );
-// };
-
-// export default Contact;
