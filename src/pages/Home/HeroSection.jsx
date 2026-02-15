@@ -133,7 +133,7 @@ const Wrapper = styled.section`
   }
 
   .view_project {
-    border: 1px solid #007bff !important;
+    border: 1px solid #6563F1 !important;
   }
 
   /* SOCIAL ICON */

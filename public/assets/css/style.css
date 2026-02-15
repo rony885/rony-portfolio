@@ -1417,7 +1417,8 @@ h6 {
 
 .btn__primary {
   color: #ffffff;
-  background-color: #21cdc0;
+  /* background-color: #21cdc0; */
+  background-color: #6563F1;
 }
 .btn__primary .icon-outlined {
   color: #213360;
