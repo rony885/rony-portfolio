@@ -106,6 +106,7 @@ import styled from "styled-components";
 import { FaLaptopCode } from "react-icons/fa";
 import { BsMortarboard } from "react-icons/bs";
 import { FiDownload } from "react-icons/fi";
+import { Link } from "react-router-dom";
 
 const About = () => {
   return (
@@ -115,14 +116,14 @@ const About = () => {
           <div className="row align-items-center g-5">
             {/* <!-- LEFT IMAGE --> */}
             <div className="col-lg-5 d-none d-lg-flex position-relative justify-content-center ">
-              <a
-                href="Elora_Yasmin_CV.pdf"
+              <Link
+                to="Elora_Yasmin_CV.pdf"
                 download
                 className="btn btn-lg position-absolute top-0 end-0 translate-middle-y fw-semibold d-flex align-items-center gap-2 cv-btn text-white"
               >
                 My CV
                 <FiDownload size={18} strokeWidth={2} />
-              </a>
+              </Link>
 
               <div className="profile-wrapper p-3">
                 <img
@@ -186,13 +187,13 @@ const About = () => {
 
               {/* <!-- MOBILE CV BUTTON --> */}
               <div className="text-center mt-4 d-lg-none">
-                <a
-                  href="Elora_Yasmin_CV.pdf"
+                <Link
+                  to="Elora_Yasmin_CV.pdf"
                   download
                   className="btn btn-lg cv-btn"
                 >
                   My CV
-                </a>
+                </Link>
               </div>
             </div>
           </div>

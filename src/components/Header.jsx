@@ -141,7 +141,7 @@ const Header = ({ menuOpen, toggleMenu, closeMenu }) => {
                 </NavLink>
               </li>
 
-              <li className="nav__item">
+              {/* <li className="nav__item">
                 <NavLink
                   to="/about"
                   className={({ isActive }) =>
@@ -151,7 +151,19 @@ const Header = ({ menuOpen, toggleMenu, closeMenu }) => {
                 >
                   About
                 </NavLink>
-              </li>
+              </li> */}
+              <li className="nav__item">
+              <Link
+                to="about"
+                smooth={true}
+                duration={500}
+                offset={-70}
+                className="nav__item-link"
+              >
+                About
+              </Link>
+            </li>
+
 
               <li className="nav__item">
                 <NavLink

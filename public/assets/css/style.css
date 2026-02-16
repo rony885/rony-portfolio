@@ -2545,12 +2545,14 @@ input[type="radio"] {
   left: 0;
   width: 0;
   height: 2px;
-  background-color: #21cdc0;
+  /* background-color: #21cdc0; */
+  background-color: #6563F1;
   transition: 0.5s ease;
 }
 .navbar .nav__item .nav__item-link.active,
 .navbar .nav__item .nav__item-link:hover {
-  color: #21cdc0;
+  /* color: #21cdc0; */
+  color: #6563F1;
 }
 .navbar .nav__item .nav__item-link.active:before,
 .navbar .nav__item .nav__item-link.active:before,

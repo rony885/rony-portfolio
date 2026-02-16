@@ -155,24 +155,24 @@ const Projects = () => {
                     </div>
 
                     <div className="d-flex gap-3">
-                      <a
-                        href={project.github}
+                      <Link
+                        to={project.github}
                         className="btn btn-dark"
                         target="_blank"
                         rel="noreferrer"
                       >
                         <FaGithub />
                         &nbsp; Code
-                      </a>
-                      <a
-                        href={project.live}
+                      </Link>
+                      <Link
+                        to={project.live}
                         className="btn btn-gradient"
                         target="_blank"
                         rel="noreferrer"
                       >
                         Live &nbsp;
                         <FaArrowRight />
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
