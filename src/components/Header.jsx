@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { FiDownload } from "react-icons/fi";
 
 const Header = ({ menuOpen, toggleMenu, closeMenu }) => {
@@ -128,14 +128,22 @@ const Header = ({ menuOpen, toggleMenu, closeMenu }) => {
       {/* <!-- /.header-top --> */}
       <nav className="navbar navbar-expand-lg sticky-navbar">
         <div className="container-fluid">
-          <Link className="navbar-brand" to="/">
+          <a
+            href="#home"
+            className="navbar-brand"
+            onClick={() => {
+              setActive("home");
+              closeMenu();
+            }}
+          >
             <img
               src="/images/logo_light.png"
               className="logo-light"
               alt="logo"
             />
             <img src="/images/logo_main.png" className="logo-dark" alt="logo" />
-          </Link>
+          </a>
+
           <button className="navbar-toggler" type="button" onClick={toggleMenu}>
             <span className="menu-lines">
               <span></span>
@@ -327,6 +335,14 @@ const Header = ({ menuOpen, toggleMenu, closeMenu }) => {
                 >
                   Contact
                 </a>
+
+                <Link
+                  to="/resume"
+                  className="btn btn__primary btn__rounded ml-30 d-lg-none d-md-block"
+                >
+                  <span>Resume</span>
+                  <FiDownload size={18} />
+                </Link>
               </li>
             </ul>
 

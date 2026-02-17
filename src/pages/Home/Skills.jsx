@@ -160,7 +160,6 @@
 
 // export default Skills;
 
-
 import React, { useState } from "react";
 import styled from "styled-components";
 
@@ -168,21 +167,86 @@ const Skills = () => {
   const [activeTab, setActiveTab] = useState("All");
 
   const skills = [
-    { name: "HTML5", level: "85%", img: "/assets/image/html.png", category: "Frontend" },
-    { name: "CSS3", level: "75%", img: "/assets/image/css.png", category: "Frontend" },
-    { name: "JavaScript", level: "50%", img: "/assets/image/js.png", category: "Frontend" },
-    { name: "React.js", level: "60%", img: "/assets/image/react.png", category: "Frontend" },
-    { name: "TailwindCSS", level: "80%", img: "/assets/image/tailwind.png", category: "Frontend" },
-    { name: "DaisyUI", level: "85%", img: "/assets/image/daisyui-icon-Bmt_1nh_.png", category: "Frontend" },
-    { name: "Next.js", level: "50%", img: "/assets/image/next.png", category: "Frontend" },
+    {
+      name: "HTML5",
+      level: "85%",
+      img: "/assets/image/html.png",
+      category: "Frontend",
+    },
+    {
+      name: "CSS3",
+      level: "75%",
+      img: "/assets/image/css.png",
+      category: "Frontend",
+    },
+    {
+      name: "JavaScript",
+      level: "50%",
+      img: "/assets/image/js.png",
+      category: "Frontend",
+    },
+    {
+      name: "React.js",
+      level: "60%",
+      img: "/assets/image/react.png",
+      category: "Frontend",
+    },
+    {
+      name: "TailwindCSS",
+      level: "80%",
+      img: "/assets/image/tailwind.png",
+      category: "Frontend",
+    },
+    {
+      name: "DaisyUI",
+      level: "85%",
+      img: "/assets/image/daisyui-icon-Bmt_1nh_.png",
+      category: "Frontend",
+    },
+    {
+      name: "Next.js",
+      level: "50%",
+      img: "/assets/image/next.png",
+      category: "Frontend",
+    },
 
-    { name: "MongoDB", level: "50%", img: "/assets/image/mongodb.png", category: "Backend" },
-    { name: "Express.js", level: "40%", img: "/assets/image/expressjs.png", category: "Backend" },
-    { name: "Node.js", level: "35%", img: "/assets/image/nodejs.png", category: "Backend" },
-    { name: "Firebase", level: "60%", img: "/assets/image/firebase.png", category: "Backend" },
+    {
+      name: "MongoDB",
+      level: "50%",
+      img: "/assets/image/mongodb.png",
+      category: "Backend",
+    },
+    {
+      name: "Express.js",
+      level: "40%",
+      img: "/assets/image/expressjs.png",
+      category: "Backend",
+    },
+    {
+      name: "Node.js",
+      level: "35%",
+      img: "/assets/image/nodejs.png",
+      category: "Backend",
+    },
+    {
+      name: "Firebase",
+      level: "60%",
+      img: "/assets/image/firebase.png",
+      category: "Backend",
+    },
 
-    { name: "GitHub", level: "80%", img: "/assets/image/github.png", category: "Tools" },
-    { name: "Figma", level: "50%", img: "/assets/image/figma.png", category: "Tools" },
+    {
+      name: "GitHub",
+      level: "80%",
+      img: "/assets/image/github.png",
+      category: "Tools",
+    },
+    {
+      name: "Figma",
+      level: "50%",
+      img: "/assets/image/figma.png",
+      category: "Tools",
+    },
   ];
 
   // Filter logic
@@ -192,8 +256,8 @@ const Skills = () => {
       : skills.filter((skill) => skill.category === activeTab);
 
   return (
-    <section id="skills" className="skills-section py-5">
-      <Wrapper>
+    <section id="skills" className="skills-section py-0 mt-0">
+      <Wrapper style={{ paddingTop: "0" }}>
         <div className="container-lg">
           {/* Title */}
           <div className="text-center mb-5">

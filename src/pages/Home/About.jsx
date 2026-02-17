@@ -110,7 +110,7 @@ import { Link } from "react-router-dom";
 
 const About = () => {
   return (
-    <section id="about" className="my-5 py-4 text-sm">
+    <section id="about" className="my-0 py-0 text-sm">
       <Wrapper>
         <div className="container-lg">
           <div className="row align-items-center g-5">
@@ -190,7 +190,7 @@ const About = () => {
                 <Link
                   to="Elora_Yasmin_CV.pdf"
                   download
-                  className="btn btn-lg cv-btn"
+                  className="btn btn-lg cv-btn text-white"
                 >
                   My CV
                 </Link>

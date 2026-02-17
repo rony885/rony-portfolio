@@ -5,10 +5,9 @@ const Footer = () => {
   return (
     <footer className="footer">
       {/* Footer Primary */}
-      <div className="footer-primary">
+      {/* <div className="footer-primary">
         <div className="container">
           <div className="row">
-            {/* About */}
             <div className="col-sm-12 col-md-12 col-lg-3">
               <div className="footer-widget-about">
                 <img
@@ -33,7 +32,6 @@ const Footer = () => {
               </div>
             </div>
 
-            {/* Departments */}
             <div className="col-sm-6 col-md-6 col-lg-2 offset-lg-1">
               <div className="footer-widget-nav">
                 <h6 className="footer-widget__title">Quick Links</h6>
@@ -63,7 +61,6 @@ const Footer = () => {
               </div>
             </div>
 
-            {/* Links */}
             <div className="col-sm-6 col-md-6 col-lg-2">
               <div className="footer-widget-nav">
                 <h6 className="footer-widget__title">Other Links</h6>
@@ -87,7 +84,6 @@ const Footer = () => {
               </div>
             </div>
 
-            {/* Contact */}
             <div className="col-sm-12 col-md-6 col-lg-4">
               <div className="footer-widget-contact">
                 <h6 className="footer-widget__title color-heading">
@@ -202,24 +198,26 @@ const Footer = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* Footer Secondary */}
-      <div className="footer-secondary">
+      <div className="footer-secondary" style={{ backgroundColor: "#1D2A4D" }}>
         <div className="container">
           <div className="row align-items-center">
             <div className="col-md-12 d-flex justify-content-center align-items-center">
               <span className="fz-14 mr-1 text-center">
                 Copyright © 2026{" "}
-                <span style={{ color: "#1D2A4D" }}>Unity Health Centre</span>.
-                Developed By{" "}
+                <span style={{ color: "#ffffff" }}>
+                  -&nbsp;All right reserved
+                </span>{" "}
+                By{" "}
                 <Link
                   to="https://www.astrosoftbd.com"
                   target="_blank"
                   className="fz-14"
-                  style={{ color: "#1D2A4D" }}
+                  style={{ color: "#ffffff" }}
                 >
-                  ASTROSOFT BD
+                  Rony
                 </Link>
               </span>
             </div>

@@ -1418,7 +1418,7 @@ h6 {
 .btn__primary {
   color: #ffffff;
   /* background-color: #21cdc0; */
-  background-color: #6563F1;
+  background-color: #6563f1;
 }
 .btn__primary .icon-outlined {
   color: #213360;
@@ -2421,10 +2421,12 @@ input[type="radio"] {
   position: absolute;
   width: 64px;
   height: 64px;
-  border: 5px solid #21cdc0;
+  /* border: 5px solid #21cdc0; */
+  border: 5px solid #1d2a4d;
   border-radius: 50%;
   animation: rotating 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
-  border-color: #21cdc0 transparent transparent transparent;
+  /* border-color: #21cdc0 transparent transparent transparent; */
+  border-color: #1d2a4d transparent transparent transparent;
 }
 .preloader .loading span:nth-child(1) {
   animation-delay: -0.45s;
@@ -2546,13 +2548,13 @@ input[type="radio"] {
   width: 0;
   height: 2px;
   /* background-color: #21cdc0; */
-  background-color: #6563F1;
+  background-color: #6563f1;
   transition: 0.5s ease;
 }
 .navbar .nav__item .nav__item-link.active,
 .navbar .nav__item .nav__item-link:hover {
   /* color: #21cdc0; */
-  color: #6563F1;
+  color: #6563f1;
 }
 .navbar .nav__item .nav__item-link.active:before,
 .navbar .nav__item .nav__item-link.active:before,
@@ -3723,7 +3725,8 @@ input[type="radio"] {
   left: 50px;
   right: 50px;
   height: 5px;
-  background-color: #21cdc0;
+  /* background-color: #21cdc0; */
+  background-color: #ffffff;
 }
 .footer [class*="footer-widget"] {
   margin-bottom: 30px;

@@ -53,7 +53,8 @@ const Wrapper = styled.section`
     font-size: 18px;
     border-radius: 50%;
     color: #ffffff;
-    background-color: #21cdc0;
+    /* background-color: #21cdc0; */
+    background-color: #6563F1;
     overflow: hidden;
     transition: all 0.3s ease-in-out;
     border: none;

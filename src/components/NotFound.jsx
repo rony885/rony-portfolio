@@ -68,7 +68,8 @@ const Wrapper = styled.section`
     /* min-height: 100vh; */
     display: flex;
     align-items: center;
-    background: linear-gradient(135deg, #21cdc0, #1baaa0);
+    /* background: linear-gradient(135deg, #21cdc0, #1baaa0); */
+    background: linear-gradient(135deg, #222222, #222222);
     color: #fff;
   }
 
@@ -87,6 +88,7 @@ const Wrapper = styled.section`
   .error-title {
     font-size: 32px;
     margin-bottom: 15px;
+
   }
 
   .error-desc {

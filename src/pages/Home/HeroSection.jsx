@@ -4,8 +4,11 @@ import styled from "styled-components";
 
 const HeroSection = () => {
   return (
-    <Wrapper style={{ paddingTop: "0", paddingBottom: "0" }}>
-      <section className="page-title page-title-layout1 bg-overlay py-5" >
+    <section
+      className="page-title page-title-layout1 bg-overlay py-0"
+      id="home"
+    >
+      <Wrapper>
         <div className="container">
           <div className="row align-items-center flex-column-reverse flex-lg-row g-5">
             {/* LEFT CONTENT */}
@@ -98,8 +101,8 @@ const HeroSection = () => {
             </div>
           </div>
         </div>
-      </section>
-    </Wrapper>
+      </Wrapper>
+    </section>
   );
 };
 
@@ -133,7 +136,7 @@ const Wrapper = styled.section`
   }
 
   .view_project {
-    border: 1px solid #6563F1 !important;
+    border: 1px solid #6563f1 !important;
   }
 
   /* SOCIAL ICON */
