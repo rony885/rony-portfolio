@@ -5,7 +5,7 @@ import styled from "styled-components";
 const HeroSection = () => {
   return (
     <Wrapper style={{ paddingTop: "0", paddingBottom: "0" }}>
-      <section className="page-title page-title-layout1 bg-overlay py-5">
+      <section className="page-title page-title-layout1 bg-overlay py-5" >
         <div className="container">
           <div className="row align-items-center flex-column-reverse flex-lg-row g-5">
             {/* LEFT CONTENT */}

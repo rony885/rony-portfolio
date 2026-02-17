@@ -43,7 +43,7 @@ const Projects = () => {
   const [view, setView] = useState("grid"); // 🔥 grid | list
   return (
     <Wrapper style={{ paddingTop: "0", paddingBottom: "0" }}>
-      <section className="projects-section py-5">
+      <section className="projects-section py-5" id="projects">
         <div className="container">
           {/* ===== Title ===== */}
           <div className="text-center mb-5">

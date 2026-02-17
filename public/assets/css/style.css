@@ -2798,7 +2798,8 @@ input[type="radio"] {
   line-height: 80px !important;
 }
 .is-sticky .nav__item .nav__item-link:before {
-  background-color: #21cdc0 !important;
+  /* background-color: #21cdc0 !important; */
+  background-color: #213360 !important;
 }
 .is-sticky .logo-light {
   display: none;

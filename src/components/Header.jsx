@@ -1,13 +1,31 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { FiDownload } from "react-icons/fi";
 
 const Header = ({ menuOpen, toggleMenu, closeMenu }) => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [active, setActive] = useState("home");
 
-  const togglePopup = () => {
-    setIsOpen((prev) => !prev);
-  };
+  useEffect(() => {
+    const handleScroll = () => {
+      const sections = ["home", "about", "skills", "projects", "contacts"];
+
+      sections.forEach((section) => {
+        const element = document.getElementById(section);
+
+        if (element) {
+          const rect = element.getBoundingClientRect();
+
+          if (rect.top <= 150 && rect.bottom >= 150) {
+            setActive(section);
+          }
+        }
+      });
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
     <header className="header header-layout1">
@@ -128,7 +146,7 @@ const Header = ({ menuOpen, toggleMenu, closeMenu }) => {
             className={`collapse navbar-collapse ${menuOpen ? "menu-opened" : ""}`}
             id="mainNavigation"
           >
-            <ul className="navbar-nav ml-auto">
+            {/* <ul className="navbar-nav ml-auto">
               <li className="nav__item">
                 <NavLink
                   to="/"
@@ -141,7 +159,7 @@ const Header = ({ menuOpen, toggleMenu, closeMenu }) => {
                 </NavLink>
               </li>
 
-              {/* <li className="nav__item">
+              <li className="nav__item">
                 <NavLink
                   to="/about"
                   className={({ isActive }) =>
@@ -151,19 +169,7 @@ const Header = ({ menuOpen, toggleMenu, closeMenu }) => {
                 >
                   About
                 </NavLink>
-              </li> */}
-              <li className="nav__item">
-              <Link
-                to="about"
-                smooth={true}
-                duration={500}
-                offset={-70}
-                className="nav__item-link"
-              >
-                About
-              </Link>
-            </li>
-
+              </li>
 
               <li className="nav__item">
                 <NavLink
@@ -210,6 +216,117 @@ const Header = ({ menuOpen, toggleMenu, closeMenu }) => {
                 >
                   Resume
                 </NavLink>
+              </li>
+            </ul> */}
+
+            {/* <ul className="navbar-nav ml-auto">
+              <li className="nav__item">
+                <a href="#home" className="nav__item-link" onClick={closeMenu}>
+                  Home
+                </a>
+              </li>
+
+              <li className="nav__item">
+                <a href="#about" className="nav__item-link" onClick={closeMenu}>
+                  About
+                </a>
+              </li>
+
+              <li className="nav__item">
+                <a
+                  href="#skills"
+                  className="nav__item-link"
+                  onClick={closeMenu}
+                >
+                  Skills
+                </a>
+              </li>
+
+              <li className="nav__item">
+                <a
+                  href="#projects"
+                  className="nav__item-link"
+                  onClick={closeMenu}
+                >
+                  Projects
+                </a>
+              </li>
+
+              <li className="nav__item">
+                <a
+                  href="#contacts"
+                  className="nav__item-link"
+                  onClick={closeMenu}
+                >
+                  Contact
+                </a>
+              </li>
+            </ul> */}
+
+            <ul className="navbar-nav ml-auto">
+              <li className="nav__item">
+                <a
+                  href="#home"
+                  className={`nav__item-link ${active === "home" ? "active" : ""}`}
+                  onClick={() => {
+                    setActive("home");
+                    closeMenu();
+                  }}
+                >
+                  Home
+                </a>
+              </li>
+
+              <li className="nav__item">
+                <a
+                  href="#about"
+                  className={`nav__item-link ${active === "about" ? "active" : ""}`}
+                  onClick={() => {
+                    setActive("about");
+                    closeMenu();
+                  }}
+                >
+                  About
+                </a>
+              </li>
+
+              <li className="nav__item">
+                <a
+                  href="#skills"
+                  className={`nav__item-link ${active === "skills" ? "active" : ""}`}
+                  onClick={() => {
+                    setActive("skills");
+                    closeMenu();
+                  }}
+                >
+                  Skills
+                </a>
+              </li>
+
+              <li className="nav__item">
+                <a
+                  href="#projects"
+                  className={`nav__item-link ${active === "projects" ? "active" : ""}`}
+                  onClick={() => {
+                    setActive("projects");
+                    closeMenu();
+                  }}
+                >
+                  Projects
+                </a>
+              </li>
+
+              <li className="nav__item">
+                <a
+                  href="#contacts"
+                  className={`nav__item-link ${active === "contacts" ? "active" : ""}`}
+                  onClick={() => {
+                    setActive("contacts");
+                    closeMenu();
+                  }}
+                >
+                  Contact
+                </a>
               </li>
             </ul>
 
