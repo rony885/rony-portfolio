@@ -10,7 +10,7 @@ const projects = [
   {
     id: 1,
     title: "Active Club",
-    image: "/assets/image/active-club-5JPtGbGQ.jpg",
+    image: "/assets/image/active-club.jpg",
     description:
       "Active Club is a full-stack sports club management web application that allows users to view and book courts, participate in activities, and stay informed...",
     tech: ["React", "Vite", "Bootstrap", "Express", "MongoDB", "Firebase"],
@@ -30,7 +30,7 @@ const projects = [
   {
     id: 3,
     title: "Active Club",
-    image: "/assets/image/active-club-5JPtGbGQ.jpg",
+    image: "/assets/image/food-mockup.jpg",
     description:
       "Active Club is a full-stack sports club management web application that allows users to view and book courts, participate in activities, and stay informed...",
     tech: ["React", "Bootstrap", "Express", "Firebase"],
