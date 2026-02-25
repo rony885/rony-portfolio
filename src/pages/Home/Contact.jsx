@@ -19,24 +19,24 @@ const Contact = () => {
             <div className="d-flex flex-column gap-3">
               {/* WhatsApp */}
               <Link
-                to="https://wa.me/8801938627947"
+                to="https://wa.me/017000520885"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="d-flex align-items-center gap-3 p-3 rounded border bg-dark bg-opacity-75 text-decoration-none text-white contact-card"
               >
                 <FaWhatsapp size={22} className="text-success" />
-                <span>+880 1938-627947</span>
+                <span>+017000520885</span>
               </Link>
 
               {/* Email */}
               <Link
-                to="mailto:elorayasmin20@gmail.com"
+                to="mailto:ha2ronyahamed@gmail.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="d-flex align-items-center gap-3 p-3 rounded border bg-dark bg-opacity-75 text-decoration-none text-white contact-card"
               >
                 <MdEmail size={22} className="text-primary" />
-                <span>elorayasmin20@gmail.com</span>
+                <span>ha2ronyahamed@gmail.com</span>
               </Link>
             </div>
 

@@ -371,7 +371,6 @@ const HeroSection = () => {
                 also exploring Next.js.
               </p>
 
-              {/* BUTTONS */}
               <div className="d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start mt-4">
                 <Link
                   to="#projects"
@@ -380,16 +379,15 @@ const HeroSection = () => {
                   View Projects →
                 </Link>
 
-                <Link
-                  to="/Elora_Yasmin_Resume.pdf"
-                  download
+                <a
+                  href="/Muhammad Rony Mia Resume.pdf"
+                  download="Muhammad Rony Mia Resume.pdf"
                   className="btn btn-primary px-4 rounded shadow"
                 >
                   Resume ⬇
-                </Link>
+                </a>
               </div>
 
-              {/* SOCIAL ICONS */}
               <div className="d-flex gap-3 justify-content-center justify-content-lg-start mt-4">
                 <Link to="#" className="social-icon">
                   <i className="fab fa-linkedin-in"></i>

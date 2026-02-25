@@ -1,5 +1,3 @@
-
-
 import React from "react";
 import styled from "styled-components";
 import { FaLaptopCode } from "react-icons/fa";
@@ -15,14 +13,14 @@ const About = () => {
           <div className="row align-items-center g-5">
             {/* <!-- LEFT IMAGE --> */}
             <div className="col-lg-5 d-none d-lg-flex position-relative justify-content-center ">
-              <Link
-                to="Elora_Yasmin_CV.pdf"
-                download
+              <a
+                href="/Muhammad Rony Mia Resume.pdf"
+                download="Muhammad Rony Mia Resume.pdf"
                 className="btn btn-lg position-absolute top-0 end-0 translate-middle-y fw-semibold d-flex align-items-center gap-2 cv-btn text-white"
               >
                 My CV
                 <FiDownload size={18} strokeWidth={2} />
-              </Link>
+              </a>
 
               <div className="profile-wrapper p-3">
                 <img
@@ -86,13 +84,13 @@ const About = () => {
 
               {/* <!-- MOBILE CV BUTTON --> */}
               <div className="text-center mt-4 d-lg-none">
-                <Link
-                  to="Elora_Yasmin_CV.pdf"
-                  download
+                <a
+                  href="/Muhammad Rony Mia Resume.pdf"
+                  download="Muhammad Rony Mia Resume.pdf"
                   className="btn btn-lg cv-btn text-white"
                 >
                   My CV
-                </Link>
+                </a>
               </div>
             </div>
           </div>

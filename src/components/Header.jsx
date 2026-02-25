@@ -336,13 +336,14 @@ const Header = ({ menuOpen, toggleMenu, closeMenu }) => {
                   Contact
                 </a>
 
-                <Link
-                  to="/resume"
+                <a
+                  href="/Muhammad Rony Mia Resume.pdf"
+                  download="Muhammad Rony Mia Resume.pdf"
                   className="btn btn__primary btn__rounded ml-30 d-lg-none d-md-block"
                 >
                   <span>Resume</span>
                   <FiDownload size={18} />
-                </Link>
+                </a>
               </li>
             </ul>
 
@@ -355,10 +356,14 @@ const Header = ({ menuOpen, toggleMenu, closeMenu }) => {
           </div>
 
           <div className="d-none d-xl-flex align-items-center position-relative ml-30">
-            <Link to="/resume" className="btn btn__primary btn__rounded ml-30">
+            <a
+              href="/Muhammad Rony Mia Resume.pdf"
+              download="Muhammad Rony Mia Resume.pdf"
+              className="btn btn__primary btn__rounded ml-30"
+            >
               <span>Resume</span>
               <FiDownload size={18} />
-            </Link>
+            </a>
           </div>
         </div>
       </nav>
