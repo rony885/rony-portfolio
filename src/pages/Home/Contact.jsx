@@ -48,7 +48,6 @@ const Contact = () => {
             <form className="bg-dark bg-opacity-75 p-4 p-md-5 rounded-4 border border-secondary shadow">
               <h3 className="text-white fw-semibold mb-4">Send a Message</h3>
 
-              {/* Name */}
               <div className="mb-3">
                 <label className="form-label text-secondary text-start">
                   Your Name
@@ -63,8 +62,6 @@ const Contact = () => {
                   />
                 </div>
               </div>
-
-              {/* Email */}
               <div className="mb-3">
                 <label className="form-label text-secondary text-start">
                   Your Email
@@ -79,8 +76,6 @@ const Contact = () => {
                   />
                 </div>
               </div>
-
-              {/* Message */}
               <div className="mb-4">
                 <label className="form-label text-secondary text-start">
                   Your Message
@@ -93,8 +88,6 @@ const Contact = () => {
                   className="form-control bg-black text-white border-secondary"
                 />
               </div>
-
-              {/* Button */}
               <button
                 type="submit"
                 className="btn w-100 text-white d-flex align-items-center justify-content-center gap-2"

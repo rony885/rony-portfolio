@@ -302,14 +302,14 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 
-const HeroSection = () => {
-  const roles = [
-    "Frontend Developer",
-    "Web Developer",
-    "React Developer",
-    "Full Stack Developer",
-  ];
+const roles = [
+  "Frontend Developer",
+  "Web Developer",
+  "React Developer",
+  "Full Stack Developer",
+];
 
+const HeroSection = () => {
   const [text, setText] = useState("");
   const [wordIndex, setWordIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
@@ -340,7 +340,7 @@ const HeroSection = () => {
     }, speed);
 
     return () => clearTimeout(typeEffect);
-  }, [text, isDeleting, wordIndex, roles, speed]);
+  }, [text, isDeleting, wordIndex, speed]);
 
   return (
     <section
