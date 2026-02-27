@@ -3,7 +3,6 @@ import styled from "styled-components";
 import { FaLaptopCode } from "react-icons/fa";
 import { BsMortarboard } from "react-icons/bs";
 import { FiDownload } from "react-icons/fi";
-import { Link } from "react-router-dom";
 
 const About = () => {
   return (

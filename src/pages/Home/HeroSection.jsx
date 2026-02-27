@@ -414,9 +414,9 @@ const HeroSection = () => {
                   className="profile-img"
                 />
 
-                <Link to="#contacts" className="btn btn-primary contact-btn">
+                <a href="#contacts" className="btn btn-primary contact-btn">
                   ✉ Contact Me
-                </Link>
+                </a>
               </div>
             </div>
           </div>
