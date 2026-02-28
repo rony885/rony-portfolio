@@ -1,13 +1,12 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
 import { FiDownload } from "react-icons/fi";
 
 const Header = ({ menuOpen, toggleMenu, closeMenu }) => {
-  const [active, setActive] = useState("home");
+  const [active, setActive] = useState("/");
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ["home", "about", "skills", "projects", "contacts"];
+      const sections = ["/", "about", "skills", "projects", "contacts"];
 
       sections.forEach((section) => {
         const element = document.getElementById(section);
@@ -129,7 +128,7 @@ const Header = ({ menuOpen, toggleMenu, closeMenu }) => {
       <nav className="navbar navbar-expand-lg sticky-navbar">
         <div className="container-fluid">
           <a
-            href="#home"
+            href="/"
             className="navbar-brand"
             onClick={() => {
               setActive("home");
@@ -274,10 +273,10 @@ const Header = ({ menuOpen, toggleMenu, closeMenu }) => {
             <ul className="navbar-nav ml-auto">
               <li className="nav__item">
                 <a
-                  href="#home"
-                  className={`nav__item-link ${active === "home" ? "active" : ""}`}
+                  href="/"
+                  className={`nav__item-link ${active === "/" ? "active" : ""}`}
                   onClick={() => {
-                    setActive("home");
+                    setActive("/");
                     closeMenu();
                   }}
                 >

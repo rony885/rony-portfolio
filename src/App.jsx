@@ -10,6 +10,7 @@ import NotFound from "./components/NotFound";
 import PageTitle from "./components/PageTitle";
 
 import Home from "./pages/Home/Home";
+import AllProjects from "./pages/AllProjects/AllProjects";
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -53,10 +54,20 @@ function App() {
             ></Route>
 
             <Route
+              path="/projects"
+              element={
+                <>
+                  <PageTitle title={"Projects"} />
+                  <AllProjects />
+                </>
+              }
+            ></Route>
+
+            <Route
               path="*"
               element={
                 <>
-                  <PageTitle title={"NOT FOUND"} />
+                  <PageTitle title={"Not Found"} />
                   <NotFound />
                 </>
               }
