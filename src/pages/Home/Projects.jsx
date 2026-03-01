@@ -183,7 +183,7 @@ const Projects = () => {
 
           {/* ===== View All ===== */}
           <div className="text-center" style={{ marginTop: "40px" }}>
-            <Link to="/projects" className="btn btn-violet px-4 py-3">
+            <Link to="/all-project" className="btn btn-violet px-4 py-3">
               View All Projects &nbsp;
               <FaArrowRight />
             </Link>

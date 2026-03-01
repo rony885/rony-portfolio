@@ -54,7 +54,7 @@ function App() {
             ></Route>
 
             <Route
-              path="/projects"
+              path="/all-project"
               element={
                 <>
                   <PageTitle title={"Projects"} />
