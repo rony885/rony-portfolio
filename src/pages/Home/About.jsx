@@ -37,12 +37,23 @@ const About = () => {
               <h2 className="display-6 fw-semibold text-secondary">About Me</h2>
               <div className="divider mx-auto mx-lg-0 my-3"></div>
 
-              <p className="text-muted fs-6 px-2 px-lg-0">
+              {/* <p className="text-muted fs-6 px-2 px-lg-0">
                 I’m a Frontend Developer who loves turning ideas into clean,
                 responsive, and user-focused web experiences. I specialize in
                 crafting modern interfaces using React and the MERN stack, and
                 I’m also exploring Next.js to enhance performance and
                 scalability.
+              </p> */}
+
+              <p
+                className="text-muted fs-6 px-2 px-lg-0"
+                style={{ textAlign: "justify" }}
+              >
+                I’m a Frontend Developer passionate about creating clean,
+                responsive, and user-focused web experiences. I build modern
+                interfaces with React and develop scalable applications using
+                Python and Django, while exploring Next.js to improve
+                performance and efficiency.
               </p>
 
               {/* <!-- CARDS --> */}
