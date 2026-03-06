@@ -364,11 +364,18 @@ const HeroSection = () => {
                 </div>
               </div>
 
-              <p className="text-muted fs-6 fs-lg-5 mt-3">
+              {/* <p className="text-muted fs-6 fs-lg-5 mt-3">
                 I am a Frontend Developer who loves transforming ideas into
                 clean, responsive, and user-focused web experiences. I enjoy
                 crafting modern interfaces with React and the MERN stack, and
                 also exploring Next.js.
+              </p> */}
+
+              <p className="text-muted fs-6 fs-lg-5 mt-3">
+                I am a Frontend Developer who loves turning ideas into clean,
+                responsive, and user-focused web experiences. I build modern
+                interfaces with React and also work as a Full Stack Web
+                Developer.
               </p>
 
               <div className="d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start mt-4">
@@ -409,7 +416,7 @@ const HeroSection = () => {
                 <div className="glow-layer"></div>
 
                 <img
-                  src="/assets/image/rony.jpg"
+                  src="/assets/image/rony ahamed.jpeg"
                   alt="Muhammad Rony"
                   className="profile-img"
                 />

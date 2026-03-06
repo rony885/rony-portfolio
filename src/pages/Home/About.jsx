@@ -34,7 +34,9 @@ const About = () => {
             {/* <!-- RIGHT CONTENT --> */}
             <div className="col-lg-7 text-center text-lg-start">
               {/* <!-- TITLE --> */}
-              <h2 className="display-6 fw-semibold text-secondary">About Me</h2>
+              <h2 className="display-6 fw-semibold text-secondary mb-0">
+                About Me
+              </h2>
               <div className="divider mx-auto mx-lg-0 my-3"></div>
 
               {/* <p className="text-muted fs-6 px-2 px-lg-0">
@@ -45,10 +47,7 @@ const About = () => {
                 scalability.
               </p> */}
 
-              <p
-                className="text-muted fs-6 px-2 px-lg-0"
-                style={{ textAlign: "justify" }}
-              >
+              <p className="text-muted fs-6 px-2 px-lg-0 text-justify">
                 I’m a Frontend Developer passionate about creating clean,
                 responsive, and user-focused web experiences. I build modern
                 interfaces with React and develop scalable applications using
@@ -57,20 +56,24 @@ const About = () => {
               </p>
 
               {/* <!-- CARDS --> */}
-              <div className="row g-4  mt-4">
+              <div className="row g-4  mt-3">
                 <div className="col-md-6">
                   <div className="card h-100 about-card">
                     <div className="text-primary mb-3">
                       <FaLaptopCode className="fs-4" />
                     </div>
-                    <h5 className="fw-semibold text-white">
+                    <h5 className="fw-semibold text-white fs-5">
                       Programming Journey
                     </h5>
-                    <p className="small">
-                      My programming journey began after I got admitted to
-                      honors. Though I started as a fresher, I was lucky to have
-                      guidance from my brother. What started as curiosity soon
-                      became passion.
+                    <p
+                      className="small text-justify"
+                      style={{ fontSize: "13px" }}
+                    >
+                      My programming journey began after I got admitted to B.Sc.
+                      in CSE. As a beginner, I strengthened my skills through
+                      learning and training at Creative IT Institute and Pondit
+                      Virtual School, which helped me build a strong foundation
+                      in web development.
                     </p>
                   </div>
                 </div>
@@ -80,13 +83,17 @@ const About = () => {
                     <div className="text-primary mb-3">
                       <BsMortarboard className="fs-3" />
                     </div>
-                    <h5 className="fw-semibold text-white">
+                    <h5 className="fw-semibold fs-5 text-white">
                       Education & Creativity
                     </h5>
-                    <p className="small">
-                      I’m studying BBA in Accounting at National University of
-                      Bangladesh. Alongside studies, I love design, teamwork,
-                      sports, and arts & crafts.
+                    <p
+                      className="small text-justify"
+                      style={{ fontSize: "13px" }}
+                    >
+                      I completed my B.Sc. in CSE from NUB and currently
+                      pursuing my M.Sc. at the same university. Alongside my
+                      studies, I enjoy design, development, teamwork, sports,
+                      and continuous learning.
                     </p>
                   </div>
                 </div>
