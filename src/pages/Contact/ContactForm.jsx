@@ -8,7 +8,6 @@ const ContactForm = () => {
         <div className="row">
           <div className="col-12">
             <div className="contact-panel d-flex flex-wrap">
-              {/* Contact Form */}
               <form className="contact-panel__form" id="contactForm">
                 <div className="row">
                   <div className="col-sm-12">
@@ -98,7 +97,6 @@ const ContactForm = () => {
                 </div>
               </form>
 
-              {/* Contact Info Panel */}
               <div className="contact-panel__info d-flex flex-column justify-content-between bg-overlay bg-overlay-primary-gradient">
                 <div className="bg-img">
                   <img src="/assets/images/banners/1.jpg" alt="banner" />

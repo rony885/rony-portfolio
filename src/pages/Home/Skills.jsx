@@ -97,7 +97,6 @@ const Skills = () => {
     <section id="skills" className="skills-section py-0 mt-0">
       <Wrapper style={{ paddingTop: "0" }}>
         <div className="container-lg">
-          {/* Title */}
           <div className="text-center mb-5">
             <h2 className="display-6 fw-semibold text-secondary">Skills</h2>
             <div className="skills-divider mx-auto mt-3"></div>

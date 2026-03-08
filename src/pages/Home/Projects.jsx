@@ -15,7 +15,7 @@ const projects = [
       "Active Club is a full-stack sports club management web application that allows users to view and book courts, participate in activities, and stay informed...",
     tech: ["React", "Vite", "Bootstrap", "Express", "MongoDB", "Firebase"],
     github: "https://github.com/your-repo",
-    live: "https://your-live-site.com",
+    live: "https://chatting-apps-xi.vercel.app/",
   },
   {
     id: 2,
@@ -46,7 +46,6 @@ const Projects = () => {
     <Wrapper style={{ paddingTop: "0", paddingBottom: "0" }}>
       <section className="projects-section py-5" id="projects">
         <div className="container">
-          {/* ===== Title ===== */}
           <div className="text-center mb-5">
             <h2 className="projects-title">Featured Projects</h2>
             <div className="title-line mx-auto"></div>
@@ -74,7 +73,7 @@ const Projects = () => {
             </button>
           </div>
 
-          {/* ================= GRID VIEW ================= */}
+          {/* ======= GRID VIEW ======= */}
           {view === "grid" && (
             <div className="row g-4">
               {projects.map((project) => (
@@ -120,7 +119,7 @@ const Projects = () => {
             </div>
           )}
 
-          {/* ================= LIST VIEW ================= */}
+          {/* ======= LIST VIEW ======= */}
           {view === "list" && (
             <div className="mt-5">
               {projects.map((project, index) => (
