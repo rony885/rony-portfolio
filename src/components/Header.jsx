@@ -38,7 +38,7 @@ const Header = ({ menuOpen, toggleMenu, closeMenu }) => {
     <header className="header header-layout1">
       <nav className="navbar navbar-expand-lg sticky-navbar">
         <div className="container-fluid">
-          <a
+          {/* <a
             href="#home"
             className="navbar-brand"
             onClick={() => {
@@ -56,6 +56,19 @@ const Header = ({ menuOpen, toggleMenu, closeMenu }) => {
               className="logo-dark"
               alt="logo"
             />
+          </a> */}
+
+          <a
+            href="#home"
+            className="navbar-brand fw-bold fs-2"
+            onClick={() => {
+              setActive("home");
+              closeMenu();
+            }}
+            // style={{ color: "#213360" }}
+          >
+            {/* Rony<span className="text-primary">Dev</span> */}
+            Rony
           </a>
 
           <button className="navbar-toggler" type="button" onClick={toggleMenu}>

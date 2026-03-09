@@ -396,13 +396,28 @@ const HeroSection = () => {
               </div>
 
               <div className="d-flex gap-3 justify-content-center justify-content-lg-start mt-4">
-                <Link to="#" className="social-icon">
+                <Link
+                  to="https://www.linkedin.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="social-icon"
+                >
                   <i className="fab fa-linkedin-in"></i>
                 </Link>
-                <Link to="#" className="social-icon">
+                <Link
+                  to="https://www.facebook.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="social-icon"
+                >
                   <i className="fab fa-facebook-f"></i>
                 </Link>
-                <Link to="#" className="social-icon">
+                <Link
+                  to="https://github.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="social-icon"
+                >
                   <i className="fab fa-github"></i>
                 </Link>
               </div>

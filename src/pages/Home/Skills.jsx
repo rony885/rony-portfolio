@@ -98,14 +98,14 @@ const Skills = () => {
       <Wrapper style={{ paddingTop: "0" }}>
         <div className="container-lg">
           <div className="text-center mb-5">
-            <h2 className="display-6 fw-semibold text-secondary">Skills</h2>
-            <div className="skills-divider mx-auto mt-3"></div>
+            <h2 className="display-6 fw-semibold text-secondary mb-0">Skills</h2>
+            <div className="skills-divider mx-auto"></div>
           </div>
 
           {/* Tabs */}
           <div
             className="d-flex justify-content-center gap-3 flex-wrap"
-            style={{ marginBottom: "40px" }}
+            style={{ marginBottom: "40px", marginTop: "40px" }}
           >
             {["All", "Frontend", "Backend", "Tools"].map((tab) => (
               <button

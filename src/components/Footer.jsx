@@ -217,7 +217,7 @@ const Footer = () => {
                   className="fz-14"
                   style={{ color: "#ffffff" }}
                 >
-                  Rony
+                  Rony Dev
                 </Link>
               </span>
             </div>
