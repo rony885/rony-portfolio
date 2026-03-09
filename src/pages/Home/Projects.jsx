@@ -88,7 +88,7 @@ const Projects = () => {
                           rel="noreferrer"
                           className="icon-btn"
                         >
-                          <FaGithub />
+                          <FaGithub className="fs-4" />
                         </a>
                         <a
                           href={project.live}
@@ -96,7 +96,7 @@ const Projects = () => {
                           rel="noreferrer"
                           className="icon-btn"
                         >
-                          <FiExternalLink />
+                          <FiExternalLink className="fs-4" />
                         </a>
                       </div>
                     </div>

@@ -379,12 +379,12 @@ const HeroSection = () => {
               </p>
 
               <div className="d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start mt-4">
-                <Link
-                  to="#projects"
+                <a
+                  href="#projects"
                   className="btn btn-outline-primary px-4 rounded view_project"
                 >
                   View Projects →
-                </Link>
+                </a>
 
                 <a
                   href="/Muhammad Rony Mia Resume.pdf"

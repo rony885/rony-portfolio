@@ -81,7 +81,7 @@ const AllProjects = () => {
           //   backgroundSize: "cover",
           //   backgroundPosition: "center",
           //   backgroundColor: "#1F2933",
-          backgroundColor: "#626e8a18",
+          backgroundColor: "#1D2A4D",
         }}
       >
         <div className="container">
@@ -92,9 +92,9 @@ const AllProjects = () => {
               <nav>
                 <ol className="breadcrumb mb-0">
                   <li className="breadcrumb-item">
-                    <a href="/" className="text-white">
+                    <Link to="/" className="text-white">
                       Home
-                    </a>
+                    </Link>
                   </li>
 
                   <li
@@ -154,7 +154,7 @@ const AllProjects = () => {
                           rel="noreferrer"
                           className="icon-btn"
                         >
-                          <FaGithub />
+                          <FaGithub className="fs-4" />
                         </a>
                         <a
                           href={project.live}
@@ -162,7 +162,7 @@ const AllProjects = () => {
                           rel="noreferrer"
                           className="icon-btn"
                         >
-                          <FiExternalLink />
+                          <FiExternalLink className="fs-4" />
                         </a>
                       </div>
                     </div>
