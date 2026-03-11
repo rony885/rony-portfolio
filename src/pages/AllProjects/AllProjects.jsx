@@ -13,7 +13,7 @@ const projects = [
     image: "/assets/image/active-club.jpg",
     description:
       "Active Club is a full-stack sports club management web application that allows users to view and book courts, participate in activities, and stay informed...",
-    tech: ["React", "Vite", "Bootstrap", "Express", "MongoDB", "Firebase"],
+    tech: ["React", "Vite", "Tailwind", "Express", "MongoDB", "Firebase"],
     github: "https://github.com/your-repo",
     live: "https://your-live-site.com",
   },

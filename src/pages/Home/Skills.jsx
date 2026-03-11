@@ -98,7 +98,9 @@ const Skills = () => {
       <Wrapper style={{ paddingTop: "0" }}>
         <div className="container-lg">
           <div className="text-center mb-5">
-            <h2 className="display-6 fw-semibold text-secondary mb-0">Skills</h2>
+            <h2 className="display-6 fw-semibold text-secondary mb-0">
+              Skills
+            </h2>
             <div className="skills-divider mx-auto"></div>
           </div>
 
