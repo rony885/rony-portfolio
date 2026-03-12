@@ -1,46 +1,21 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { FaGithub, FaListUl, FaArrowRight } from "react-icons/fa";
 import { FiExternalLink } from "react-icons/fi";
 import { BsFillGrid3X3GapFill } from "react-icons/bs";
 import { HiOutlineCode } from "react-icons/hi";
+import Tooltip from "@mui/material/Tooltip";
 
-const projects = [
-  {
-    id: 1,
-    title: "Active Club",
-    image: "/assets/image/active-club.jpg",
-    description:
-      "Active Club is a full-stack sports club management web application that allows users to view and book courts, participate in activities, and stay informed...",
-    tech: ["React", "Vite", "Tailwind", "Express", "MongoDB", "Firebase"],
-    github: "https://github.com/your-repo",
-    live: "https://chatting-apps-xi.vercel.app/",
-  },
-  {
-    id: 2,
-    title: "Job Nest",
-    image: "/assets/image/job_nest-mockup-BVeMda7r.png",
-    description:
-      "Job Nest is a full-stack job portal application that allows users to search jobs, apply online, and manage applications efficiently...",
-    tech: ["React", "Vite", "Bootstrap", "Express", "MongoDB", "Firebase"],
-    github: "https://github.com/your-repo",
-    live: "https://your-live-site.com",
-  },
-  {
-    id: 3,
-    title: "Active Club",
-    image: "/assets/image/food-mockup.jpg",
-    description:
-      "Active Club is a full-stack sports club management web application that allows users to view and book courts, participate in activities, and stay informed...",
-    tech: ["React", "Bootstrap", "Express", "Firebase"],
-    github: "https://github.com/your-repo",
-    live: "https://your-live-site.com",
-  },
-];
+import projectArray from "../../projects.js";
 
 const Projects = () => {
+  const [projects, setProjects] = useState([]);
   const [view, setView] = useState("grid"); // 🔥 grid | list
+
+  useEffect(() => {
+    setProjects(projectArray);
+  }, []);
 
   return (
     <Wrapper style={{ paddingTop: "0", paddingBottom: "0" }}>
@@ -76,28 +51,33 @@ const Projects = () => {
           {/* ======= GRID VIEW ======= */}
           {view === "grid" && (
             <div className="row g-4">
-              {projects.map((project) => (
+              {projects.slice(0, 6).map((project) => (
                 <div key={project.id} className="col-md-6 col-lg-4">
                   <div className="project-card h-100">
                     <div className="project-img">
                       <img src={project.image} alt={project.title} />
                       <div className="project-overlay">
-                        <a
-                          href={project.github}
-                          target="_blank"
-                          rel="noreferrer"
-                          className="icon-btn"
-                        >
-                          <FaGithub className="fs-4" />
-                        </a>
-                        <a
-                          href={project.live}
-                          target="_blank"
-                          rel="noreferrer"
-                          className="icon-btn"
-                        >
-                          <FiExternalLink className="fs-4" />
-                        </a>
+                        <Tooltip title="Github" arrow>
+                          <a
+                            href={project.github}
+                            target="_blank"
+                            rel="noreferrer"
+                            className="icon-btn"
+                          >
+                            <FaGithub className="fs-4" />
+                          </a>
+                        </Tooltip>
+
+                        <Tooltip title="Live Project" arrow>
+                          <a
+                            href={project.live}
+                            target="_blank"
+                            rel="noreferrer"
+                            className="icon-btn"
+                          >
+                            <FiExternalLink className="fs-4" />
+                          </a>
+                        </Tooltip>
                       </div>
                     </div>
 
@@ -122,7 +102,7 @@ const Projects = () => {
           {/* ======= LIST VIEW ======= */}
           {view === "list" && (
             <div className="mt-5">
-              {projects.map((project, index) => (
+              {projects.slice(0, 6).map((project, index) => (
                 <div
                   key={project.id}
                   className={`row align-items-center ${

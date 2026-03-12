@@ -1,76 +1,21 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { FaGithub, FaListUl, FaArrowRight } from "react-icons/fa";
 import { FiExternalLink } from "react-icons/fi";
 import { BsFillGrid3X3GapFill } from "react-icons/bs";
 import { HiOutlineCode } from "react-icons/hi";
+import Tooltip from "@mui/material/Tooltip";
 
-const projects = [
-  {
-    id: 1,
-    title: "Active Club",
-    image: "/assets/image/active-club.jpg",
-    description:
-      "Active Club is a full-stack sports club management web application that allows users to view and book courts, participate in activities, and stay informed...",
-    tech: ["React", "Vite", "Tailwind", "Express", "MongoDB", "Firebase"],
-    github: "https://github.com/your-repo",
-    live: "https://your-live-site.com",
-  },
-  {
-    id: 2,
-    title: "Job Nest",
-    image: "/assets/image/job_nest-mockup-BVeMda7r.png",
-    description:
-      "Job Nest is a full-stack job portal application that allows users to search jobs, apply online, and manage applications efficiently...",
-    tech: ["React", "Vite", "Bootstrap", "Express", "MongoDB", "Firebase"],
-    github: "https://github.com/your-repo",
-    live: "https://your-live-site.com",
-  },
-  {
-    id: 3,
-    title: "Active Club",
-    image: "/assets/image/food-mockup.jpg",
-    description:
-      "Active Club is a full-stack sports club management web application that allows users to view and book courts, participate in activities, and stay informed...",
-    tech: ["React", "Bootstrap", "Express", "Firebase"],
-    github: "https://github.com/your-repo",
-    live: "https://your-live-site.com",
-  },
-  {
-    id: 4,
-    title: "Active Club",
-    image: "/assets/image/active-club.jpg",
-    description:
-      "Active Club is a full-stack sports club management web application that allows users to view and book courts, participate in activities, and stay informed...",
-    tech: ["React", "Vite", "Bootstrap", "Express", "MongoDB", "Firebase"],
-    github: "https://github.com/your-repo",
-    live: "https://your-live-site.com",
-  },
-  {
-    id: 5,
-    title: "Job Nest",
-    image: "/assets/image/job_nest-mockup-BVeMda7r.png",
-    description:
-      "Job Nest is a full-stack job portal application that allows users to search jobs, apply online, and manage applications efficiently...",
-    tech: ["React", "Vite", "Bootstrap", "Express", "MongoDB", "Firebase"],
-    github: "https://github.com/your-repo",
-    live: "https://your-live-site.com",
-  },
-  {
-    id: 6,
-    title: "Active Club",
-    image: "/assets/image/food-mockup.jpg",
-    description:
-      "Active Club is a full-stack sports club management web application that allows users to view and book courts, participate in activities, and stay informed...",
-    tech: ["React", "Bootstrap", "Express", "Firebase"],
-    github: "https://github.com/your-repo",
-    live: "https://your-live-site.com",
-  },
-];
+import projectArray from "../../projects.js";
 
 const AllProjects = () => {
+  const [projects, setProjects] = useState([]);
   const [view, setView] = useState("grid"); // 🔥 grid | list
+
+  useEffect(() => {
+    setProjects(projectArray);
+  }, []);
 
   return (
     <Wrapper style={{ paddingTop: "0", paddingBottom: "0" }}>
@@ -92,7 +37,7 @@ const AllProjects = () => {
               <nav>
                 <ol className="breadcrumb mb-0">
                   <li className="breadcrumb-item">
-                    <Link to="/" className="text-white">
+                    <Link to="/" className="breadcrumb-home">
                       Home
                     </Link>
                   </li>
@@ -148,22 +93,27 @@ const AllProjects = () => {
                     <div className="project-img">
                       <img src={project.image} alt={project.title} />
                       <div className="project-overlay">
-                        <a
-                          href={project.github}
-                          target="_blank"
-                          rel="noreferrer"
-                          className="icon-btn"
-                        >
-                          <FaGithub className="fs-4" />
-                        </a>
-                        <a
-                          href={project.live}
-                          target="_blank"
-                          rel="noreferrer"
-                          className="icon-btn"
-                        >
-                          <FiExternalLink className="fs-4" />
-                        </a>
+                        <Tooltip title="Github" arrow>
+                          <a
+                            href={project.github}
+                            target="_blank"
+                            rel="noreferrer"
+                            className="icon-btn"
+                          >
+                            <FaGithub className="fs-4" />
+                          </a>
+                        </Tooltip>
+
+                        <Tooltip title="Live Project" arrow>
+                          <a
+                            href={project.live}
+                            target="_blank"
+                            rel="noreferrer"
+                            className="icon-btn"
+                          >
+                            <FiExternalLink className="fs-4" />
+                          </a>
+                        </Tooltip>
                       </div>
                     </div>
 
@@ -400,92 +350,35 @@ const Wrapper = styled.section`
   }
 
   /* ====== list css ===== */
-
-  body {
-    background-color: #0f172a;
-    color: #fff;
-  }
-
-  .project-card {
+  .breadcrumb-home {
+    color: #a78bfa;
+    font-weight: 600;
+    text-decoration: none;
     position: relative;
-    border-radius: 16px;
-    overflow: hidden;
-    border: 2px solid #374151;
-    transition: all 0.4s ease;
-  }
-
-  .project-card img {
-    width: 100%;
-    height: 340px;
-    object-fit: cover;
-    transition: transform 0.4s ease;
-  }
-
-  .project-card:hover img {
-    transform: scale(1.03);
-  }
-
-  .project-card:hover {
-    border-color: #8b5cf6;
-    box-shadow: 0 15px 40px rgba(139, 92, 246, 0.25);
-  }
-
-  .project-overlay {
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
-    opacity: 0;
-    transition: opacity 0.3s ease;
-  }
-
-  .project-card:hover .project-overlay {
-    opacity: 1;
-  }
-
-  .project-title {
-    font-size: 2rem;
-    font-weight: 700;
-  }
-
-  .project-description {
-    color: #cbd5f5;
-    line-height: 1.6;
-  }
-
-  .project-badge {
-    display: inline-block;
-    background: #1e293b;
-    color: #cbd5f5;
     padding: 4px 10px;
-    margin: 4px;
-    border-radius: 8px;
-    font-size: 14px;
-    border: 1px solid #334155;
-    transition: 0.3s;
+    border-radius: 6px;
+    animation: homeGlow 1.8s ease-in-out infinite;
+    transition: all 0.3s ease;
   }
 
-  .project-badge:hover {
-    border-color: #8b5cf6;
-    color: #d8b4fe;
-  }
-
-  .btn-gradient {
-    background: linear-gradient(to right, #8b5cf6, #9333ea);
+  /* hover effect */
+  .breadcrumb-home:hover {
+    background: #7c3aed;
     color: #fff;
-    border: none;
+    animation: none;
   }
 
-  .btn-gradient:hover {
-    box-shadow: 0 10px 25px rgba(139, 92, 246, 0.5);
-  }
-
-  .icon-circle {
-    background: rgba(139, 92, 246, 0.2);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 12px;
+  /* glowing animation */
+  @keyframes homeGlow {
+    0% {
+      box-shadow: 0 0 0px rgba(167, 139, 250, 0.6);
+    }
+    50% {
+      box-shadow: 0 0 12px rgba(167, 139, 250, 0.9);
+    }
+    100% {
+      box-shadow: 0 0 0px rgba(167, 139, 250, 0.6);
+    }
   }
 `;
 
