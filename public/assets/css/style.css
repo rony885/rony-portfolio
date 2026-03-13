@@ -1236,7 +1236,8 @@ h6 {
   color: #435ba1;
 }
 .page-title .btn {
-  min-width: 190px;
+  /* min-width: 190px; */
+  min-width: 150px;
 }
 .page-title .btn.btn__outlined {
   line-height: 58px;
@@ -1365,8 +1366,10 @@ h6 {
   z-index: 1;
   font-size: 15px;
   font-weight: 700;
-  min-width: 170px;
-  height: 60px;
+  /* min-width: 170px; */
+  min-width: 150px;
+  /* height: 60px; */
+  height: 50px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
