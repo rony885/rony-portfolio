@@ -6,42 +6,49 @@ const Skills = () => {
 
   const skills = [
     {
+      id: 1,
       name: "HTML5",
       level: "85%",
       img: "/assets/image/html.png",
       category: "Frontend",
     },
     {
+      id: 2,
       name: "CSS3",
       level: "75%",
       img: "/assets/image/css.png",
       category: "Frontend",
     },
     {
+      id: 3,
       name: "JavaScript",
       level: "50%",
       img: "/assets/image/js.png",
       category: "Frontend",
     },
     {
+      id: 4,
       name: "React.js",
       level: "60%",
       img: "/assets/image/react.png",
       category: "Frontend",
     },
     {
+      id: 5,
       name: "TailwindCSS",
       level: "80%",
       img: "/assets/image/tailwind.png",
       category: "Frontend",
     },
     {
+      id: 6,
       name: "DaisyUI",
       level: "85%",
       img: "/assets/image/daisyui-icon-Bmt_1nh_.png",
       category: "Frontend",
     },
     {
+      id: 7,
       name: "Next.js",
       level: "50%",
       img: "/assets/image/next.png",
@@ -49,37 +56,57 @@ const Skills = () => {
     },
 
     {
+      id: 8,
       name: "MongoDB",
       level: "50%",
       img: "/assets/image/mongodb.png",
       category: "Backend",
     },
     {
+      id: 9,
       name: "Express.js",
       level: "40%",
       img: "/assets/image/expressjs.png",
       category: "Backend",
     },
     {
+      id: 10,
       name: "Node.js",
       level: "35%",
       img: "/assets/image/nodejs.png",
       category: "Backend",
     },
     {
+      id: 11,
       name: "Firebase",
+      level: "60%",
+      img: "/assets/image/firebase.png",
+      category: "Backend",
+    },
+    {
+      id: 12,
+      name: "Python",
+      level: "60%",
+      img: "/assets/image/firebase.png",
+      category: "Backend",
+    },
+    {
+      id: 13,
+      name: "Django",
       level: "60%",
       img: "/assets/image/firebase.png",
       category: "Backend",
     },
 
     {
+      id: 14,
       name: "GitHub",
       level: "80%",
       img: "/assets/image/github.png",
       category: "Tools",
     },
     {
+      id: 15,
       name: "Figma",
       level: "50%",
       img: "/assets/image/figma.png",
