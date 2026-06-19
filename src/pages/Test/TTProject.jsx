@@ -264,6 +264,7 @@ const Projects = () => {
               </Link>
             </div>
           </div> */}
+
           <div className="row g-4">
             {projects.map((project) => (
               <div key={project.id} className="col-md-6 col-lg-4 d-flex">
