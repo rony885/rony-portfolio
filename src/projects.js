@@ -12,7 +12,8 @@ const projects = [
   {
     id: 2,
     title: "Job Nest",
-    image: "/assets/image/job_nest-mockup-BVeMda7r.png",
+    // image: "/assets/image/job_nest-mockup-BVeMda7r.png",
+    image: "/assets/image/atooz.png",
     description:
       "Job Nest is a full-stack job portal application that allows users to search jobs, apply online, and manage applications efficiently...",
     tech: ["React", "Vite", "Bootstrap", "Express", "MongoDB", "Firebase"],
@@ -22,7 +23,8 @@ const projects = [
   {
     id: 3,
     title: "Active Club",
-    image: "/assets/image/food-mockup.jpg",
+    // image: "/assets/image/food-mockup.jpg",
+    image: "/assets/image/eque.png",
     description:
       "Active Club is a full-stack sports club management web application that allows users to view and book courts, participate in activities, and stay informed...",
     tech: ["React", "Bootstrap", "Express", "Firebase"],

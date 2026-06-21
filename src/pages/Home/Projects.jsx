@@ -55,7 +55,11 @@ const Projects = () => {
                 <div key={project.id} className="col-md-6 col-lg-4">
                   <div className="project-card h-100">
                     <div className="project-img">
-                      <img src={project.image} alt={project.title} />
+                      <img
+                        src={project.image}
+                        alt={project.title}
+                        // style={{ width: "600px", height: "400px" }}
+                      />
                       <div className="project-overlay">
                         <Tooltip title="Github" arrow>
                           <a
