@@ -1,8 +1,9 @@
 const projects = [
   {
     id: 1,
-    title: "Active Club",
-    image: "/assets/image/active-club.jpg",
+    title: "Chatting Applications",
+    // image: "/assets/image/active-club.jpg",
+    image: "/assets/image/chatting applications.png",
     description:
       "Active Club is a full-stack sports club management web application that allows users to view and book courts, participate in activities, and stay informed...",
     tech: ["React", "Vite", "Tailwind", "Express", "MongoDB", "Firebase"],
