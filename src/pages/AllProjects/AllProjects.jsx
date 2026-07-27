@@ -84,7 +84,7 @@ const AllProjects = () => {
             </button>
           </div>
 
-          {/* ======== GRID VIEW ======== */}
+          {/* ===== GRID VIEW ===== */}
           {view === "grid" && (
             <div className="row g-4">
               {projects.map((project) => (
@@ -135,7 +135,7 @@ const AllProjects = () => {
             </div>
           )}
 
-          {/* ======== LIST VIEW ======== */}
+          {/* ===== LIST VIEW ===== */}
           {view === "list" && (
             <div className="mt-5">
               {projects.map((project, index) => (
