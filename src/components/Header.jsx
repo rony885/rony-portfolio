@@ -48,6 +48,7 @@ const Header = ({ menuOpen, toggleMenu, closeMenu }) => {
           >
             <img
               src="/assets/images/logo/logo-dark.png"
+              src="/assets/images/logo/rony logo"
               className="logo-light"
               alt="logo"
             />
@@ -58,18 +59,33 @@ const Header = ({ menuOpen, toggleMenu, closeMenu }) => {
             />
           </a> */}
 
-          <a
+          {/* <a
             href="#home"
             className="navbar-brand fw-bold fs-2"
             onClick={() => {
               setActive("home");
               closeMenu();
             }}
-            // style={{ color: "#213360" }}
+            style={{ color: "#213360" }}
           >
-            {/* Rony<span className="text-primary">Dev</span> */}
+            Rony<span className="text-primary">Dev</span>
             Rony
-          </a>
+          </a> */}
+          <a
+  href="#home"
+  className="navbar-brand"
+  onClick={() => {
+    setActive("home");
+    closeMenu();
+  }}
+>
+  <img
+    src="/assets/images/logo/rony-logo.png"
+    className="rony-logo"
+    alt="Rony Logo"
+    style={{ width: "185px", height: "100px"}}
+  />
+</a>
 
           <button className="navbar-toggler" type="button" onClick={toggleMenu}>
             <span className="menu-lines">

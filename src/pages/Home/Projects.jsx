@@ -51,7 +51,7 @@ const Projects = () => {
           {/* ======= GRID VIEW ======= */}
           {view === "grid" && (
             <div className="row g-4">
-              {projects.slice(0, 6).map((project) => (
+              {projects.slice(0, 3).map((project) => (
                 <div key={project.id} className="col-md-6 col-lg-4">
                   <div className="project-card h-100">
                     <div className="project-img">
@@ -106,7 +106,7 @@ const Projects = () => {
           {/* ======= LIST VIEW ======= */}
           {view === "list" && (
             <div className="mt-5">
-              {projects.slice(0, 6).map((project, index) => (
+              {projects.slice(0, 3).map((project, index) => (
                 <div
                   key={project.id}
                   className={`row align-items-center ${
