@@ -27,13 +27,13 @@ const Contact = () => {
               </Link>
 
               <Link
-                to="mailto:ha2ronyahamed@gmail.com"
+                to="mailto:contact.mdronymia@gmail.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="d-flex align-items-center gap-3 p-3 rounded-4 border bg-dark bg-opacity-75 text-decoration-none text-white contact-card"
               >
                 <MdEmail size={22} className="text-primary" />
-                <span>ha2ronyahamed@gmail.com</span>
+                <span>contact.mdronymia@gmail.com</span>
               </Link>
             </div>
 

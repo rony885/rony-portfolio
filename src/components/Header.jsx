@@ -72,20 +72,20 @@ const Header = ({ menuOpen, toggleMenu, closeMenu }) => {
             Rony
           </a> */}
           <a
-  href="#home"
-  className="navbar-brand"
-  onClick={() => {
-    setActive("home");
-    closeMenu();
-  }}
->
-  <img
-    src="/assets/images/logo/rony-logo.png"
-    className="rony-logo"
-    alt="Rony Logo"
-    style={{ width: "185px", height: "100px"}}
-  />
-</a>
+            href="#home"
+            className="navbar-brand"
+            onClick={() => {
+              setActive("home");
+              closeMenu();
+            }}
+          >
+            <img
+              src="/assets/images/logo/rony logo 11.png"
+              className="rony-logo"
+              alt="Rony Logo"
+              style={{ width: "185px", height: "80px" }}
+            />
+          </a>
 
           <button className="navbar-toggler" type="button" onClick={toggleMenu}>
             <span className="menu-lines">

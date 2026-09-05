@@ -75,7 +75,7 @@ const projects = [
       "A real-time chatting application that allows users to communicate through an intuitive interface, manage conversations, and exchange messages with a smooth and responsive user experience...",
     tech: ["React", "Vite", "Tailwind", "Firebase"],
     github: "https://github.com/your-repo",
-    live: "https://your-live-site.com",
+    live: "https://chatting-apps-xi.vercel.app/",
   },
   {
     id: 2,

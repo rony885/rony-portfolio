@@ -132,6 +132,13 @@ const Skills = () => {
       img: "/assets/image/nodejs.png",
       category: "Backend",
     },
+    {
+      id: 18,
+      name: "Postgresql",
+      level: "50%",
+      img: "/assets/image/postgresql-database-logo.png",
+      category: "Backend",
+    },
   ];
 
   // Filter logic
