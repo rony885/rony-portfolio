@@ -380,6 +380,21 @@ const Wrapper = styled.section`
       box-shadow: 0 0 0px rgba(167, 139, 250, 0.6);
     }
   }
+
+  .btn.btn-gradient {
+    background: linear-gradient(135deg, #8b5cf6, #9333ea) !important;
+    background-color: #8b5cf6 !important;
+    color: #ffffff !important;
+    border: none !important;
+    transition: all 0.3s ease;
+  }
+
+  .btn.btn-gradient:hover {
+    background: linear-gradient(135deg, #9333ea, #7c3aed) !important;
+    color: #ffffff !important;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(139, 92, 246, 0.5);
+  }
 `;
 
 export default AllProjects;

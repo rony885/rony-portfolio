@@ -380,13 +380,18 @@ const Wrapper = styled.section`
     color: #d8b4fe;
   }
 
-  .btn-gradient {
-    background: linear-gradient(to right, #8b5cf6, #9333ea);
-    color: #fff;
-    border: none;
+  .btn.btn-gradient {
+    background: linear-gradient(135deg, #8b5cf6, #9333ea) !important;
+    background-color: #8b5cf6 !important;
+    color: #ffffff !important;
+    border: none !important;
+    transition: all 0.3s ease;
   }
 
-  .btn-gradient:hover {
+  .btn.btn-gradient:hover {
+    background: linear-gradient(135deg, #9333ea, #7c3aed) !important;
+    color: #ffffff !important;
+    transform: translateY(-2px);
     box-shadow: 0 10px 25px rgba(139, 92, 246, 0.5);
   }
 
